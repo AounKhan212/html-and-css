@@ -40,27 +40,27 @@
 
 //--------------------chnageprogram----------------
 
-function changeProgram(){
+// function changeProgram(){
 
-    var old=document.getElementsByTagName("ol")[0];
-    var ele=old.getElementsByTagName("ul")[0];
-    var secEle=old.getElementsByTagName("ul")[1];
-    var secList=secEle.getElementsByTagName("li");
-    var list=ele.getElementsByTagName("li");
-    for(var i=0; i< list.length;i++){
-        var change=list[i];
-        if(change.innerHTML=="Ap"){
-            change.innerHTML="WEb";
-        }
-    }
+//     var old=document.getElementsByTagName("ol")[0];
+//     var ele=old.getElementsByTagName("ul")[0];
+//     var secEle=old.getElementsByTagName("ul")[1];
+//     var secList=secEle.getElementsByTagName("li");
+//     var list=ele.getElementsByTagName("li");
+//     for(var i=0; i< list.length;i++){
+//         var change=list[i];
+//         if(change.innerHTML=="Ap"){
+//             change.innerHTML="WEb";
+//         }
+//     }
 
-    for(var i=0; i<secList.length;i++){
-        var change=secList[i];
-        if(change.innerHTML.trim().toLowerCase()==="hclcg"){
-            change.innerHTML="Web";
-        }
-    }
-}
+//     for(var i=0; i<secList.length;i++){
+//         var change=secList[i];
+//         if(change.innerHTML.trim().toLowerCase()==="hclcg"){
+//             change.innerHTML="Web";
+//         }
+//     }
+// }
 
 
 
@@ -92,6 +92,12 @@ function changeProgram(){
 // }
 
 // document.write("</table>");
+
+
+
+
+
+
 
 
 
