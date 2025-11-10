@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Test</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+#container{
+
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 2px solid rgb(133, 80, 80);
+}
+</style>
+<body>
+
+  <div id="container">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  <div id="carouselExample" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../images/pak.png" class="d-block w-100" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/pak.png" class="d-block w-100" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/pak.png" class="d-block w-100" alt="Image 3">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Bootstrap JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <div class="container my-3 p-3 border border-dark">
+    <div class="row text-center">
+      <div class="col-4">
+        <img src="../images/pak.png" class="img-fluid" style="width:150px;">
+      </div>
+      <div class="col-4">
+        <img src="../images/pak.png" class="img-fluid" style="width:150px;">
+      </div>
+      <div class="col-4">
+        <img src="../images/pak.png" class="img-fluid" style="width:150px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-3 p-3 border border-primary">
+    <div class="row text-center">
+      <div class="col">
+        <img src="../images/pak.png" style="width: 100px;">
+      </div>
+      <div class="col">
+        <img src="../images/pak.png" style="width: 100px;">
+      </div>
+      <div class="col">
+        <img src="../images/pak.png" style="width: 100px;">
+      </div>
+      <div class="col">
+        <img src="../images/pak.png" style="width: 100px;">
+      </div>
+      <div class="col">
+        <img src="../images/pak.png" style="width: 100px;">
+      </div>
+      <div class="col">
+        <img src="../images/pak.png" style="width: 100px;">
+      </div>
+      <div class="col">
+        <img src="../images/pak.png" style="width: 100px;">
+      </div>
+      <div class="col">
+        <img src="../images/pak.png" style="width: 100px;">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3">
+        <img src="../images/pak.png" class="w-100" style="height: 100px;">
+      </div>
+      <div class="col-3">
+        <img src="../images/pak.png" class="w-100" style="height: 100px;">
+      </div>
+      <div class="col-3">
+        <img src="../images/pak.png" class="w-100" style="height: 100px;">
+      </div>
+      <div class="col-3">
+        <img src="../images/pak.png" class="w-100" style="height: 100px;">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container my-3 p-3 border border-primary">
+
+    <p class="text-start">.Lahore is the capital city of Punjab province.
+
+      It is the second-largest city of Pakistan after Karachi.
+
+      The city is often called the "Heart of Pakistan."
+
+      Lahore has a population of over 13 million people.
+
+      It is one of the most culturally vibrant cities in South Asia.
+
+      Lahore has a history that spans more than a thousand years.
+
+      The city has been ruled by Ghaznavids, Mughals, Sikhs, and the British.
+
+      Mughal emperors made Lahore an important center of art and architecture.
+
+      The famous Lahore Fort and Shalimar Gardens are UNESCO World Heritage Sites.
+
+      The Badshahi Mosque is one of the largest mosques in the world.
+
+      Lahore is home to the historic Walled City with its 13 gates.
+
+      Delhi Gate, Bhati Gate, and Lohari Gate are among the most famous.
+    </p>
+  </div>
+  </div>
+
+
+</body>
+
+</html>
