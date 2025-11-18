@@ -63,6 +63,127 @@
 // }
 
 
+// jquery version-------------------------------)(())
+
+
+
+// var ele = $("#Heading");
+// ele.text("jQuery Example");
+
+
+
+//------------------simple calculator------------------
+
+
+// var n1 = parseFloat(prompt("Enter first number:"));
+// var n2 = parseFloat(prompt("Enter second number:"));
+
+// document.write("Result of addition: " + (n1 + n2) + "<br>");
+// document.write("Result of multiplication: " + (n1 * n2) + "<br>");
+// document.write("Result of subtraction: " + (n1 - n2) + "<br>");  
+
+
+// (function(){
+//       const form = document.getElementById('loginForm');
+//       const user = document.getElementById('username');
+//       const pass = document.getElementById('password');
+//       const resetBtn = document.getElementById('resetBtn');
+//       const msg = document.getElementById('msg');
+
+//       resetBtn.addEventListener('click', () => {
+//         // explicitly clear textboxes
+//         user.value = '';
+//         pass.value = '';
+//         msg.style.display = 'none';
+//       });
+
+//       form.addEventListener('submit', (e) => {
+//         e.preventDefault();
+//         // very simple demo: reject empty fields, otherwise "log in"
+//         if (!user.value.trim() || !pass.value) {
+//           msg.textContent = 'Please enter username and password.';
+//           msg.style.display = 'block';
+//           return;
+//         }
+//         msg.style.color = '#080';
+//         msg.textContent = 'Submitted (demo) — username: ' + user.value;
+//         msg.style.display = 'block';
+//       });
+//     })();
+// document.write("Result of addition: " + (n1 =+ n2) + "<br>");
+// document.write("Result of multiplication: " + (n1 * n2) + "<br>");
+// document.write("Result of subtraction: " + (n1 - n2) + "<br>");
+
+
+//simple calcultor of SimpleCal.html----------------
+
+function calculate(form, operation) {
+            var n1 = parseFloat(form.num1.value);
+            var n2 = parseFloat(form.num2.value);
+            var result;
+
+            if (isNaN(n1) || isNaN(n2)) {
+                result = 'Enter valid numbers';
+            } else {
+                switch (operation) {
+                    case 'add':
+                        result = n1 + n2;
+                        break;
+                    case 'subtract':
+                        result = n1 - n2;
+                        break;
+                    case 'multiply':
+                        result = n1 * n2;
+                        break;
+                    case 'divide':
+                        if (n2 !== 0) {
+                            result = n1 / n2;
+                        } else {
+                            result = 'Error: Division by zero';
+                        }
+                        break;
+                }
+            }
+
+            form.result.value = result;
+        }
+
+
+
+function cal() {
+    var n1 = parseFloat(document.getElementById("num1").value);
+    var n2 = parseFloat(document.getElementById("num2").value);
+    var operation = document.getElementById("opr").value;
+    var result;
+
+    if (isNaN(n1) || isNaN(n2)) {
+        result = 'Enter valid numbers';
+    } else {
+        switch (operation) {
+            case 'Add':
+                result = n1 + n2;
+                break;
+            case 'Subtract':
+                result = n1 - n2;
+                break;
+                case 'Multiply':
+                result = n1 * n2;
+                break;
+            case 'Divide':
+                if (n2 !== 0) {
+                    result = n1 / n2;
+                } else {
+                    result = 'Error: Division by zero';
+                }
+                break;
+            default:
+                result = 'Select a valid operation';
+        }
+    }
+
+    document.getElementById("result").innerText = result;
+} 
+
 
 
 
