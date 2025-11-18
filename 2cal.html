@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+
+    <form name="calcForm">
+
+        <h2>Simple Calculator</h2>
+
+        <div>
+            <label for="num1">Number 1:</label>
+            <input type="number" id="num1" name="num1">
+        </div>
+        <br>
+        <div>
+            <label for="num2">Number 2:</label>
+            <input type="number" id="num2" name="num2">
+        </div>
+
+        <fieldset>
+            <legend>Operations</legend>
+            <input type="button" value="Add" onclick="calculate(this.form, 'add')">
+            <input type="button" value="Subtract" onclick="calculate(this.form, 'subtract')">
+            <input type="button" value="Multiply" onclick="calculate(this.form, 'multiply')">
+            <input type="button" value="Divide" onclick="calculate(this.form, 'divide')">
+        </fieldset>
+
+        <div>
+            <label for="result">Result:</label>
+            <input type="text" id="result" name="result" disabled>
+        </div>
+
+    </form>
+</body>
+<script src="java.js"></script>
+</html>
